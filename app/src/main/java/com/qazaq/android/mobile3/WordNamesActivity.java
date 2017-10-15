@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WordNamesActivity extends AppCompatActivity {
@@ -31,7 +32,12 @@ public class WordNamesActivity extends AppCompatActivity {
 
         word = getIntent().getExtras().getString("word");
 
+        display(word);
+    }
+
+    private void display(String word) {
         mConditionRef = mRootRef.child(word);
+        names = new ArrayList<>();
 
         mConditionRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -43,8 +49,7 @@ public class WordNamesActivity extends AppCompatActivity {
                     names.add(wn);
                 }
                 if(!names.isEmpty()){
-                    ArrayAdapter wordAdapter = new WordAdapter(this, words);
-                    listView.setAdapter(wordAdapter);
+                    adapter(names);
                 }
             }
 
@@ -53,6 +58,12 @@ public class WordNamesActivity extends AppCompatActivity {
                 Log.d("ERROR", "something wrong");
             }
         });
+    }
+
+    private void adapter(List<WordName> names) {
+        this.names = names;
+        WordNameAdapter nameAdapter = new WordNameAdapter(this, names);
+        listView.setAdapter(nameAdapter);
     }
 
 }
