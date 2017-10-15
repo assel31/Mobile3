@@ -7,16 +7,26 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:id="@+id/wordImageView"
-        />
+        android:foreground="@drawable/dark_layer"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/titleTextView"
-        android:text="Kakoi to title"
+        android:layout_alignBottom="@id/wordImageView"
+        android:layout_alignLeft="@id/wordImageView"
+        android:layout_alignRight="@id/wordImageView"
+        android:layout_alignTop="@id/wordImageView"
+        android:gravity="center"
         android:layout_alignParentBottom="true"
         android:textStyle="bold"
         android:layout_marginTop="5dp"
-        android:textSize="25dp"/>
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:shadowColor="@color/darkgray"
+        android:shadowRadius="25"
+        android:shadowDx="2"
+        android:shadowDy="2"/>
 
 </RelativeLayout>

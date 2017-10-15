@@ -20,7 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".WordNamesActivity" />
-        <activity android:name=".TextActivity"></activity>
+        <activity
+            android:name=".TextActivity"
+            android:label="@string/title_activity_text"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

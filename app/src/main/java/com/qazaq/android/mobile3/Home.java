@@ -87,6 +87,7 @@ public class Home extends Fragment {
         Intent intent = new Intent(getActivity(), TextActivity.class);
         intent.putExtra("title", infos.get(position).getTitle());
         intent.putExtra("content", infos.get(position).getContent());
+        intent.putExtra("image", infos.get(position).getImage());
         startActivity(intent);
     }
 

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,26 +16,62 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="A a"/>
-        <Button
+
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="A' a'"/>
-        <Button
+
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="B b"/>
-        <Button
+
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="D d"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -43,26 +81,60 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="E e"/>
-        <Button
+
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="F f"/>
-        <Button
+
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="G g"/>
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:shadowColor="@color/colorAccent"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
             android:text="G' g'"/>
 
     </LinearLayout>
@@ -74,24 +146,56 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="H h"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="I i"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="I' i'"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="J j"/>
     </LinearLayout>
@@ -103,24 +207,56 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="K k"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="L l"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="M m"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="N n"/>
 
@@ -133,24 +269,56 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="N' n'"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="O o"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="O' o'"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="P p"/>
 
@@ -163,24 +331,56 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="Q q"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="R r"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="S s"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="S' s'"/>
 
@@ -193,24 +393,56 @@
         android:layout_weight="1"
         android:weightSum="4">
 
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="C' c'"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="T t"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="U u"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="U' u'"/>
 
@@ -222,24 +454,56 @@
         android:orientation="horizontal"
         android:layout_weight="1"
         android:weightSum="4">
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="V v"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="Y y"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="Y' y'"/>
-        <Button
+        <info.hoang8f.widget.FButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+             fbutton:buttonColor="@color/colorPrimaryDark"
+             fbutton:shadowColor="@color/colorAccent"
+             fbutton:shadowEnabled="true"
+             fbutton:shadowHeight="5dp"
+             fbutton:cornerRadius="5dp"
+             android:layout_margin="5dp"
+             android:textColor="@color/white"
+             android:textAllCaps="false"
             android:layout_weight="1"
             android:text="Z z"/>
 

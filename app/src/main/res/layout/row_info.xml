@@ -19,7 +19,7 @@
         android:layout_alignTop="@id/infoImageView"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="30dp"
         android:textAllCaps="true"
         android:shadowColor="@color/darkgray"

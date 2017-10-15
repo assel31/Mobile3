@@ -1,6 +1,7 @@
 package com.qazaq.android.mobile3;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,8 +67,10 @@ public class WordAdapter extends BaseAdapter {
         TextView titleTextView;
 
         public ViewHolder(View convertView){
+            Typeface font = Typeface.createFromAsset(context.getAssets(), "fonts/heading.otf");
             wordImageView = (ImageView) convertView.findViewById(R.id.wordImageView);
             titleTextView = (TextView) convertView.findViewById(R.id.titleTextView);
+            titleTextView.setTypeface(font);
         }
     }
 }
