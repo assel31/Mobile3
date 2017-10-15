@@ -82,7 +82,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_words:
                 fragment = new Words();
                 break;
-
+            case R.id.nav_logout:
+                finish();
+                System.exit(0);
+                break;
         }
         if(fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
