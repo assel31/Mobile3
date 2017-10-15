@@ -22,5 +22,8 @@ public class TextActivity extends AppCompatActivity {
         titleView = (TextView) findViewById(R.id.titleTextView);
         contentView = (TextView) findViewById(R.id.contentTextView);
 
+        titleView.setText(title);
+        contentView.setText(content);
+
     }
 }
