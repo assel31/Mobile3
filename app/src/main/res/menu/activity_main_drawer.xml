@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/ic_home_black_24px"
+            android:title="Главная" />
+        <item
+            android:id="@+id/nav_alphabet"
+            android:icon="@drawable/ic_font_download_black_24px"
+            android:title="Алфавит" />
+        <item
+            android:id="@+id/nav_words"
+            android:icon="@drawable/ic_list_black_24px"
+            android:title="Слова и фразы" />
+        <item
+            android:id="@+id/nav_grammar"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Грамматика" />
+        <item
+            android:id="@+id/nav_exercises"
+            android:icon="@drawable/ic_toys_black_24px"
+            android:title="Тренировки" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24px"
+            android:title="Выйти" />
+    </group>
+
+</menu>
