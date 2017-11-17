@@ -44,15 +44,15 @@ public class Alphabet extends Fragment {
         for(int index=0; index<32; index++) {
             LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
             buttonParams.weight = 1;
-            buttonParams.setMargins(5, 5, 5, 5);
+            buttonParams.setMargins(8, 8, 8, 8);
             mButtonsArray[index] = new FButton(getActivity());
             mButtonsArray[index].setLayoutParams(buttonParams);
             mButtonsArray[index].setText(alphabet[index]);
             mButtonsArray[index].setButtonColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorPrimaryDark));
             mButtonsArray[index].setShadowColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorAccent));
             mButtonsArray[index].setShadowEnabled(true);
-            mButtonsArray[index].setShadowHeight(5);
-            mButtonsArray[index].setCornerRadius(5);
+            mButtonsArray[index].setShadowHeight(8);
+            mButtonsArray[index].setCornerRadius(8);
             mButtonsArray[index].setTextColor(mButtonsArray[index].getContext().getResources().getColor(R.color.white));
             mButtonsArray[index].setTransformationMethod(null);
 
@@ -60,7 +60,6 @@ public class Alphabet extends Fragment {
             mButtonsArray[index].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.i("Alphabet", String.valueOf(mp.getDuration()));
                     mp.start();
                 }
             });
