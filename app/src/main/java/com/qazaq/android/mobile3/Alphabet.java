@@ -1,5 +1,6 @@
 package com.qazaq.android.mobile3;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,7 +30,10 @@ public class Alphabet extends Fragment {
         view = inflater.inflate(R.layout.alphabet, container, false);
         FButton[] mButtonsArray = new FButton[32];
         String[] alphabet = {"A", "A'", "B", "D", "E", "F", "G", "G'", "H", "I", "I'", "J", "K", "L", "M", "N", "N'", "O", "O'",
-                "P", "Q", "R", "S", "S'", "C'", "T", "U", "U'", "V", "Y", "Y'", "Z"};
+                "P", "Q", "R", "S", "S'", "C1", "T", "U", "U'", "V", "Y", "Y'", "Z"};
+        Integer[] soundKeys = {R.raw.a, R.raw.a1, R.raw.b, R.raw.d, R.raw.e, R.raw.f, R.raw.g, R.raw.g1, R.raw.h, R.raw.i, R.raw.i1,
+                R.raw.j, R.raw.k, R.raw.l, R.raw.m, R.raw.n, R.raw.n1, R.raw.o, R.raw.o1, R.raw.p, R.raw.q, R.raw.r, R.raw.s, R.raw.s1,
+                R.raw.c1, R.raw.t, R.raw.u, R.raw.u1, R.raw.v, R.raw.y, R.raw.y1, R.raw.z};
         LinearLayout parentLinear = ((LinearLayout)view.findViewById(R.id.parentLinear));
         LinearLayout l = new LinearLayout(getActivity());
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, 1.0f);
@@ -51,6 +55,15 @@ public class Alphabet extends Fragment {
             mButtonsArray[index].setCornerRadius(5);
             mButtonsArray[index].setTextColor(mButtonsArray[index].getContext().getResources().getColor(R.color.white));
             mButtonsArray[index].setTransformationMethod(null);
+
+            final MediaPlayer mp = MediaPlayer.create(getActivity(), soundKeys[index]);
+            mButtonsArray[index].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Log.i("Alphabet", String.valueOf(mp.getDuration()));
+                    mp.start();
+                }
+            });
             l.addView(mButtonsArray[index]);
 
             if ((index+1)%4==0 && index!=0) {
