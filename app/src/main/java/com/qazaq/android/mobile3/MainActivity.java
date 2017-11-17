@@ -95,6 +95,9 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_alphabet:
                 fragment = new Alphabet();
                 break;
+            case R.id.nav_translit:
+                fragment = new Translit();
+                break;
             case R.id.nav_words:
                 fragment = new Words();
                 break;
