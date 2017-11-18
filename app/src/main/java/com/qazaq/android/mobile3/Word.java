@@ -8,6 +8,7 @@ public class Word {
 
     private String word;
     private String image;
+    private String name;
 
     public Word(){}
 
@@ -30,6 +31,14 @@ public class Word {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
 

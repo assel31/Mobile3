@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.List;
 
@@ -52,16 +55,21 @@ public class WordNameAdapter extends BaseAdapter {
         }
 
         viewHolder.nameTextView.setText(names.get(position).getName());
-        //Glide.with(context).load(words.get(position).getImage()).centerCrop().into(viewHolder.wordImageView);
+        viewHolder.description.setText(names.get(position).getDescription());
+        Glide.with(context).load(names.get(position).getImage()).centerCrop().into(viewHolder.wordImageView);
 
         return convertView;
     }
 
     private class ViewHolder{
         TextView nameTextView;
+        ImageView wordImageView;
+        TextView description;
 
         public ViewHolder(View convertView){
+            wordImageView = (ImageView) convertView.findViewById(R.id.wordImageView);
             nameTextView = (TextView) convertView.findViewById(R.id.nameTextView);
+            description = (TextView) convertView.findViewById(R.id.descriptionTextView);
         }
     }
 }

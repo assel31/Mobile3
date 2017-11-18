@@ -81,7 +81,7 @@ public class Words extends Fragment {
 
     public void openWordList(int position){
         Intent intent = new Intent(getActivity(), WordNamesActivity.class);
-        intent.putExtra("word", words.get(position).getWord());
+        intent.putExtra("word", words.get(position).getName());
         startActivity(intent);
     }
 }
