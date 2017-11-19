@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:text="text"
-        android:textSize="22dp"
+        android:textSize="24dp"
+        android:textColor="#555555"
         android:layout_toEndOf="@+id/wordImageView"
         android:layout_toRightOf="@+id/wordImageView"/>
 
@@ -25,6 +26,7 @@
         android:padding="10dp"
         android:text="text"
         android:textSize="18dp"
+        android:textColor="@color/colorAccentDark"
         android:layout_alignBottom="@+id/wordImageView"
         android:layout_toRightOf="@+id/wordImageView"/>
 

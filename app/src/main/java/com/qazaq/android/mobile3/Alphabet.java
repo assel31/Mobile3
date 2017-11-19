@@ -29,8 +29,9 @@ public class Alphabet extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.alphabet, container, false);
         FButton[] mButtonsArray = new FButton[32];
-        String[] alphabet = {"A", "A'", "B", "D", "E", "F", "G", "G'", "H", "I", "I'", "J", "K", "L", "M", "N", "N'", "O", "O'",
-                "P", "Q", "R", "S", "S'", "C1", "T", "U", "U'", "V", "Y", "Y'", "Z"};
+        String[] alphabet = {"A [а]", "A' [ә]", "B [б]", "D [д]", "E [е]", "F [ф]", "G [г]", "G' [ғ]", "H [х]",
+                "I [і]", "I' [и]", "J [ж]", "K [к]", "L [л]", "M [м]", "N [н]", "N' [ң]", "O [о]", "O' [ө]",
+                "P [п]", "Q [қ]", "R [р]", "S [с]", "S' [щ]", "C' [ч]", "T [т]", "U [ұ]", "U' [ү]", "V [в]", "Y [ы]", "Y' [у]", "Z [з]"};
         Integer[] soundKeys = {R.raw.a, R.raw.a1, R.raw.b, R.raw.d, R.raw.e, R.raw.f, R.raw.g, R.raw.g1, R.raw.h, R.raw.i, R.raw.i1,
                 R.raw.j, R.raw.k, R.raw.l, R.raw.m, R.raw.n, R.raw.n1, R.raw.o, R.raw.o1, R.raw.p, R.raw.q, R.raw.r, R.raw.s, R.raw.s1,
                 R.raw.c1, R.raw.t, R.raw.u, R.raw.u1, R.raw.v, R.raw.y, R.raw.y1, R.raw.z};
@@ -44,12 +45,12 @@ public class Alphabet extends Fragment {
         for(int index=0; index<32; index++) {
             LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
             buttonParams.weight = 1;
-            buttonParams.setMargins(8, 8, 8, 8);
+            buttonParams.setMargins(18, 10, 18, 10);
             mButtonsArray[index] = new FButton(getActivity());
             mButtonsArray[index].setLayoutParams(buttonParams);
             mButtonsArray[index].setText(alphabet[index]);
-            mButtonsArray[index].setButtonColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorPrimaryDark));
-            mButtonsArray[index].setShadowColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorAccent));
+            mButtonsArray[index].setButtonColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorAccent));
+            mButtonsArray[index].setShadowColor(mButtonsArray[index].getContext().getResources().getColor(R.color.colorAccentDark));
             mButtonsArray[index].setShadowEnabled(true);
             mButtonsArray[index].setShadowHeight(8);
             mButtonsArray[index].setCornerRadius(8);
