@@ -4,35 +4,54 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
-
-    <TextView
+    android:background="#fcfcfc">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Введите слово"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        android:layout_marginTop="30dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:id="@+id/word"/>
-
-    <info.hoang8f.widget.FButton
-        android:id="@+id/enter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enter"
-        app:buttonColor="@color/colorPrimary"
-        app:shadowColor="@color/colorAccent"
-        app:shadowEnabled="true"
-        app:shadowHeight="5dp"
-        app:cornerRadius="5dp"
-        android:textColor="@color/white"
-        android:layout_margin="15dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/translited"
-        android:text="слово"/>
-
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20dp"
+                android:paddingBottom="18dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/translited"
+                android:textSize="16sp"
+                android:textColor="#888888"
+                android:text="Latyn a'lipbi'indegi so'z"
+                android:textAlignment="center"/>
+        </android.support.v7.widget.CardView>
+        <EditText
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/word"
+            android:hint="Кириллицадағы сөзді енгізіңіз"
+            android:textColorHint="#bfbfbf"/>
+        <info.hoang8f.widget.FButton
+            android:id="@+id/enter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Айналдыру"
+            app:buttonColor="@color/colorPrimaryDark"
+            app:shadowColor="@color/colorAccent"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="5dp"
+            android:textColor="@color/white"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
 </LinearLayout>
